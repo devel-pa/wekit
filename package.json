@@ -1,0 +1,22 @@
+{
+  "name": "welcome",
+  "version": "0.0.1",
+  "description": "Romanian IT Welcome Kit",
+  "main": "index.js",
+  "scripts": {
+    "docs:prepare": "gitbook install",
+    "docs:watch": "npm run docs:prepare && gitbook serve",
+    "docs:build": "npm run docs:prepare && rm -rf _book && gitbook build",
+    "docs:publish": "npm run docs:build && cd _book && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && git add . && git commit -am 'Update docs' && git push git@github.com:devel-pa/wekit gh-pages --force"
+  },
+  "author": "Paul Apostol",
+  "license": "MIT",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.0"
+  },
+  "dependencies": {
+    "gitbook-plugin-bootstrap-callout": "^0.1.2",
+    "gitbook-plugin-feathers-collapsible-menu": "^1.0.2",
+    "gitbook-plugin-include": "^0.1.0"
+  }
+}

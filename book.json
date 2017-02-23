@@ -1,0 +1,16 @@
+{
+  "gitbook": "3.2.2",
+  "title": "RomanianIT Welcome Kit",
+  "root": "./docs",
+  "structure": {
+    "summary": "SUMMARY.md"
+  },
+  "plugins": [
+    "include",
+    "feathers-collapsible-menu",
+    "bootstrap-callout"
+  ],
+  "pluginsConfig": {
+
+  }
+}
